@@ -1,0 +1,358 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f1dcb0; /* Floral White */
+    color: #700c0c; /* Deep Maroon */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #800000; /* Maroon */
+    color: #ffd700; /* Gold */
+    padding: 40px 20px;
+    background-color: #800000; /* Your Maroon */
+    /* This creates a subtle repeating floral texture */
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    
+    color: #ffd700; /* Your Gold */
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 8px solid #d4af37; /* Thick gold border like a saree 'pallu' */
+    box-shadow: inset 0 0 50px rgba(0,0,0,0.5); /* Adds depth */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+section {
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    border-bottom: 2px solid #ffd700;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 15px 0;
+    font-size: 1.1em;
+}
+.portfolio-img {
+    width: 100%;           /* Makes it responsive */
+    max-width: 500px;      /* Prevents it from being too big */
+    height: auto;          /* Keeps the proportions correct */
+    border: 5px solid #f8d405; /* Adds a gold border like a frame */
+    border-radius: 8px;    /* Slightly rounds the corners */
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Adds a professional shadow */
+}
+.whatsapp-btn {
+    background-color: #25D366; /* WhatsApp Green */
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128C7E; /* Darker green on hover */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.insta-btn {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.insta-btn:hover {
+    transform: scale(1.05); /* Makes the button grow slightly when hovered */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.google-btn {
+    background-color: rgb(92, 3, 3);
+    color: #ffffff; /* Google Blue */
+    border: 2px solid #073072;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.google-btn:hover {
+    background-color: #082cf8;
+    color: rgb(241, 238, 5);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.scroll-container {
+    display: flex;
+    overflow-x: auto; /* This enables the horizontal scroll */
+    gap: 15px;       /* Adds space between the photos */
+    padding: 20px;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+/* Style for the images inside the scroll */
+.scroll-container img {
+    flex: 0 0 auto;  /* Prevents images from shrinking */
+    width: 250px;    /* You can adjust the size of the photos here */
+    height: 350px;
+    object-fit: cover; /* Keeps the photos from looking stretched */
+    border-radius: 10px;
+    border: 2px solid #ffd700;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Optional: This makes the scrollbar look cleaner on Chrome/Edge */
+.scroll-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background: #ffd700;
+    border-radius: 10px;
+}
+header h1 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 5px;
+}
+
+header p {
+    font-style: bold;
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+header {
+    position: relative; /* This is important to keep the corners inside the header */
+    background-color: #800000;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    color: #ffd700;
+    padding: 80px 20px; /* Increased padding to make room for corners */
+    text-align: center;
+    overflow: hidden; /* Clips any part of the corner that goes outside */
+}
+body {
+    border: 15px solid #f4e1c1; /* A soft, thick frame around the whole site */
+    margin: 0;
+    padding: 0;
+    background-color: #fffaf0; /* Your Floral White */
+    min-height: 100vh;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border: 2px solid #ffd700; /* A thin box around the name */
+    display: inline-block;
+    padding: 10px 20px;
+}
+header {
+    position: relative;
+    background-color: #800000;
+    /* This adds a gold border at the top AND bottom */
+    border-top: 12px solid #d4af37; 
+    border-bottom: 12px solid #d4af37;
+    
+    /* This creates the 'texture' of the border using stripes */
+    border-image: repeating-linear-gradient(
+        45deg,
+        #ffd700,
+        #ffd700 5px,
+        #b8860b 5px,
+        #b8860b 10px
+    ) 10;
+    
+    color: #ffd700;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* Let's add a thin white 'piping' line inside the border to make it pop */
+header::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+}
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    /* This creates a 'glow' that looks like gold thread */
+    text-shadow: 1px 1px 0px #b8860b, 
+                 2px 2px 0px #b8860b, 
+                 3px 3px 5px rgba(0,0,0,0.5);
+    margin: 0;
+}
+header {
+    background-color: #800000;
+    color: #ffd700;
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    
+    /* This creates the main 'Saree Border' look */
+    border-top: 15px solid #d4af37;
+    border-bottom: 15px solid #d4af37;
+    
+    /* This adds the 'weaving' pattern to the border */
+    border-image: repeating-linear-gradient(
+        -45deg,
+        #ffd700,
+        #ffd700 2px,
+        #b8860b 2px,
+        #b8860b 8px
+    ) 20;
+}
+
+/* Adding a tiny 'bead' line inside the border for extra detail */
+header::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-image: radial-gradient(#fff 1px, transparent 1px);
+    background-size: 10px 10px;
+    opacity: 0.5;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 40px 10px; /* Smaller padding for phones */
+        border-top: 8px solid #d4af37; /* Thinner saree border */
+        border-bottom: 8px solid #d4af37;
+    }
+    
+    header h1 {
+        font-size: 1.5em; /* Shrinks the text so it fits on one line */
+    }
+}
+header {
+    background-color: #800000; /* Royal Maroon */
+    color: #ffd700; /* Gold */
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+
+    /* This creates a 15px gold border that looks like Gota Patti or Zari */
+    border-top: 15px solid #d4af37;
+    border-bottom: 15px solid #d4af37;
+    
+    /* This adds the 'texture' to the border */
+    border-image: repeating-linear-gradient(
+        45deg,
+        #ffd700,
+        #ffd700 2px,
+        #b8860b 2px,
+        #b8860b 8px
+    ) 20;
+}
+header::before {
+    content: "✽"; /* Floral motif */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 40px;
+    opacity: 0.3;
+}
+
+header::after {
+    content: "✽";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 40px;
+    opacity: 0.3;
+}
+#owner {
+    background-color: #fffaf0; /* Floral White */
+    padding: 60px 20px;
+    border-top: 2px solid #d4af37;
+}
+
+.owner-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap; /* This makes it stack on phones! */
+}
+
+.owner-image img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%; /* Makes the photo a circle */
+    border: 5px solid #800000; /* Maroon border */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.owner-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.owner-text h2 {
+    color: #800000;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+}
+
+.owner-text h3 {
+    color: #d4af37;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.mumbai-tagline {
+    font-style: italic;
+    color: #555;
+    margin-top: 20px;
+}
